@@ -1,0 +1,18 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "events": {
+    "statusOnly": {
+      "path": "/_v/status",
+      "public": true
+    },
+    "status": {
+      "path": "/_v/status/:code",
+      "public": true
+    }
+  }
+}
